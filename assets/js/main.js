@@ -5,7 +5,7 @@ $(document).ready(function () {
     end_contact = document.getElementById('contact_dot');
 
   new LeaderLine(start_about, end_about, {
-    color: 'lightgrey',
+    color: '#656565',
     size: 1,
     path: 'straight',
     startPlug: 'disc',
@@ -16,7 +16,7 @@ $(document).ready(function () {
   });
 
   new LeaderLine(start_contact, end_contact, {
-    color: 'lightgrey',
+    color: '#656565',
     size: 1,
     path: 'straight',
     startPlug: 'disc',

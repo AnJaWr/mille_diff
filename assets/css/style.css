@@ -6,7 +6,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: black;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/background2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -30,7 +30,7 @@ body {
   cursor: pointer;
 }
 .logotyp:hover {
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 10px rgb(23, 23, 23);
 }
 
 .section {
@@ -41,7 +41,7 @@ body {
 }
 
 .tip {
-  color: aliceblue;
+  color: #656565;
   font-family: 'Megrim', cursive;
 }
 
