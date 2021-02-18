@@ -6,7 +6,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: black;
-  background-image: url(../img/background2.jpg);
+  background-image: url(../img/background3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,15 +22,12 @@ body {
   align-items: center;
 }
 .logotyp {
-  color: rgba(175, 203, 255, 0.721);
+  color: rgba(80, 97, 130, 0.721);
   font-family: 'Megrim', cursive;
   font-size: calc(10rem + 5vw);
   font-weight: 700;
   transition: 0.5s;
   cursor: pointer;
-}
-.logotyp:hover {
-  text-shadow: 0px 0px 10px rgb(23, 23, 23);
 }
 
 .section {
@@ -41,8 +38,9 @@ body {
 }
 
 .tip {
-  color: #656565;
+  color: rgba(80, 97, 130, 0.9);
   font-family: 'Megrim', cursive;
+  font-weight: 300;
 }
 
 .grid-container {
@@ -70,9 +68,18 @@ body {
   justify-content: flex-end;
 }
 .border {
-  border-style: ridge;
-  padding: 10px 15px;
+  border: 7px solid;
+  border-image: url(../img/border.svg);
+  /* padding: 10px 15px; */
+  border-image-slice: 55 50;
 }
+.border-inside {
+  background-color: rgba(117, 124, 150, 0.2);
+  height: 90%;
+  padding: 2px 5px;
+  border-radius: 8%;
+}
+
 .about {
   grid-area: about;
 }
