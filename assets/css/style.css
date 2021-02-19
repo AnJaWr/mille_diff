@@ -180,5 +180,30 @@ svg:hover {
   grid-area: lorem-grid;
 }
 
+.circle-animated {
+  stroke: rgb(157, 166, 196);
+  stroke-dasharray: 0;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+/*  */
+@keyframes spin {
+  100%,
+  0% {
+    stroke-dasharray: 0;
+  }
+  33% {
+    stroke-dasharray: 50;
+  }
+  66% {
+    stroke-dasharray:10;
+  }
+}
+
 @media only screen and (min-device-width: 320px) {
+}
+
+@media (min-device-width: 1920px) {
 }
