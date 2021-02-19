@@ -42,11 +42,13 @@ body {
 }
 .navigation-button {
   text-decoration: none;
-  color: rgba(80, 97, 130, 0.9);
+  color: rgba(80, 97, 130, 0.7);
   font-family: 'Megrim', cursive;
-  font-weight: 300;
+  font-weight: 400;
 }
-
+.navigation-button:hover {
+  color: rgb(80, 97, 130);
+}
 .tip-up {
   display: flex;
   align-items: flex-end;

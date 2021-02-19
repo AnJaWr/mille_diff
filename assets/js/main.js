@@ -1,10 +1,4 @@
 $(document).ready(function () {
-  // $('.navigation-button').click(function () {
-  //   $('.section').hide();
-  //   console.log($('#' + $(this).data('id')));
-  //   $('#' + $(this).data('id')).fadeIn(1000);
-  // });
-
   var start_about = document.getElementById('about-btn'),
     end_about = document.getElementById('about_dot'),
     start_contact = document.getElementById('contact-btn'),
@@ -38,5 +32,13 @@ $(document).ready(function () {
   $('#logotyp').on('click', function () {
     $('.tip').fadeToggle(1000);
     $('.leader-line').fadeToggle(1000);
+  });
+
+  $('.section').hide();
+
+  $('.navigation-button').click(function () {
+    $('.section').hide();
+    console.log($('#' + $(this).data('id')));
+    $('#' + $(this).data('id')).fadeIn(1000);
   });
 });
