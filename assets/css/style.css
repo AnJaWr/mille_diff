@@ -83,8 +83,6 @@ svg:hover {
 /* section */
 
 .section {
-  position: relative;
-  /* display: none; */
   z-index: 10;
   position: absolute;
   top: 50%;
@@ -125,6 +123,18 @@ svg:hover {
 .contact a {
   color: rgba(243, 243, 243, 0.843);
   text-decoration: none;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 100%;
+  transition: 1s;
+}
+
+.close:hover {
+  color: rgba(243, 243, 243, 0.843);
 }
 /* main grid container */
 

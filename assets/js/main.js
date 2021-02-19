@@ -2,11 +2,7 @@ $(document).ready(function () {
   var start_about = document.getElementById('about-btn'),
     end_about = document.getElementById('about_dot'),
     start_contact = document.getElementById('contact-btn'),
-    end_contact = document.getElementById('contact_dot'),
-    SELECTOR_SCREEN_ELEMENT = document.getElementsByClassName('.screen'),
-    SELECTOR_SWITCHER_TV = document.getElementById('switcher-tv'),
-    isTurnedOn = true,
-    timeline;
+    end_contact = document.getElementById('contact_dot');
 
   new LeaderLine(start_about, end_about, {
     color: '#656565',
@@ -41,47 +37,12 @@ $(document).ready(function () {
   $('.section').hide();
 
   $('.navigation-button').click(function () {
-    $('.section').hide();
+    $('.section, .tip, .leader-line').hide();
+    $('.tip').hide();
     console.log($('#' + $(this).data('id')));
     $('#' + $(this).data('id')).fadeIn(1000);
   });
-
-  function buildTimeline() {
-    timeline = new TimelineMax({
-      paused: true,
-    });
-
-    timeline
-      .to(SELECTOR_SCREEN_ELEMENT, 0.2, {
-        width: '100vw',
-        height: '2px',
-        background: '#ffffff',
-        ease: Power2.easeOut,
-      })
-      .to(SELECTOR_SCREEN_ELEMENT, 0.2, {
-        width: '0',
-        height: '0',
-        background: '#ffffff',
-      });
-  }
-
-  function toggleSwitcherTV() {
-    if (isTurnedOn) {
-      timeline.restart();
-    }
-
-    if (!isTurnedOn) {
-      timeline.reverse();
-    }
-
-    isTurnedOn = !isTurnedOn;
-  }
-
-  // Initialize
-
-  buildTimeline();
-  // Bindings
-  $(document).on('click', SELECTOR_SWITCHER_TV, function () {
-    toggleSwitcherTV();
+  $('.close').click(function () {
+    $('.section').fadeOut(1000);
   });
-})();
+});
