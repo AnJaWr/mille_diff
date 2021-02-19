@@ -1,13 +1,19 @@
 $(document).ready(function () {
-  var start_about = document.getElementById('about'),
+  // $('.navigation-button').click(function () {
+  //   $('.section').hide();
+  //   console.log($('#' + $(this).data('id')));
+  //   $('#' + $(this).data('id')).fadeIn(1000);
+  // });
+
+  var start_about = document.getElementById('about-btn'),
     end_about = document.getElementById('about_dot'),
-    start_contact = document.getElementById('contact'),
+    start_contact = document.getElementById('contact-btn'),
     end_contact = document.getElementById('contact_dot');
 
   new LeaderLine(start_about, end_about, {
     color: '#656565',
     size: 1,
-    path: 'straight',
+    path: 'grid',
     startPlug: 'disc',
     endPlug: 'disc',
     startPlugSize: 2,
@@ -18,7 +24,7 @@ $(document).ready(function () {
   new LeaderLine(start_contact, end_contact, {
     color: '#656565',
     size: 1,
-    path: 'straight',
+    path: 'grid',
     startPlug: 'disc',
     endPlug: 'disc',
     startPlugSize: 2,

@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/scale.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/section.css">
+
+
+
+
     <link rel="shortcut icon" href="https://anjawr.github.io/mille2/assets/img/favicon.ico" type="image/x-icon">
     <title>Milledion</title>
 </head>
 
 <body>
-    <div class="main_wrapper">
-        <h1 class="heading-off">milledion</h1>
+    <h1 class="heading-off">milledion</h1>
+
+    <div class="grid_wrapper">
         <div class="grid-container">
-            <div class="logotyp" id="logotyp">
+            <div class="logotyp-grid" id="logotyp">
                 <div class="logotyp">
 
                     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -30,9 +36,9 @@
                         <g clip-path="url(#_clipPath_MwX3ZEvygEPaPmmEZstYMKf4a4XbZVxh)">
                             <path
                                 d=" M 36 143.95 L 36 136 L 111 136 L 111 32.4 L 65.783 79.95 L 22.45 32.2 L 22.45 143.95 L 15 143.95 L 15 18 L 21 18 L 65.783 67.95 L 111 18.2 L 117 18 L 117 143.95 L 36 143.95 Z "
-                                fill="rgb(95, 101, 122)" mask="url(#maskpatch)" vector-effect="non-scaling-stroke"
-                                stroke-width="6" stroke="rgb(95, 101, 122)" stroke-linejoin="miter"
-                                stroke-linecap="square" stroke-miterlimit="5" />
+                                fill="rgb(95, 101, 122)" vector-effect="non-scaling-stroke" stroke-width="6"
+                                stroke="rgb(95, 101, 122)" stroke-linejoin="miter" stroke-linecap="square"
+                                stroke-miterlimit="5" id="logo-M" />
 
                             <circle id="about_dot" vector-effect="non-scaling-stroke" cx="17.5" cy="20.499999999999996"
                                 r="2.5" fill="rgb(95, 101, 122)" />
@@ -50,22 +56,25 @@
                     </svg>
                 </div>
             </div>
-            <div class="tip tip-up about navigation-button">
-                <div class="border" id="about">
+            <div class="tip tip-up about-grid navigation-button">
+                <div class="border" id="about-btn">
                     <div class="border-inside">
-                        about</div>
+                        <a class=" navigation-button" data-id="about" href="#"> about</a>
+                    </div>
                 </div>
             </div>
-            <div class="tip lorem"></div>
-            <div class="tip tip-down contact navigation-button">
-                <div class="border" id="contact">
+            <div class="tip lorem2-grid"></div>
+            <div class="tip tip-down contact-grid">
+                <div class="border" id="contact-btn">
                     <div class="border-inside">
-                        contact</div>
+                        <a class=" navigation-button" data-id="contact" href="#"> contact</a>
+                    </div>
                 </div>
+
             </div>
+
+            <div class="tip lorem-grid"></div>
         </div>
-        <div class="tip lorem"></div>
-    </div>
 
     </div>
     <!-- 2. motto 
@@ -100,8 +109,7 @@
 
     <!-- 4. Contact 
             =========================================================================  -->
-    <div class="contact_text container section contact" id="contact">
-
+    <div class="contact_text section contact" id="contact">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 contact-col d-flex">
                 <div class="contact-col-adress"><i class="fas fa-phone-alt"></i></div>
@@ -122,12 +130,16 @@
         </div>
 
     </div>
-
-
+    </div>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/leader-line.min.js"></script>
-    <!-- <script src="assets/js/anim-event.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/leader-line.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+
+
+
+
 
 </body>
 

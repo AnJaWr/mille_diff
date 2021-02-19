@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
-@import 'tippy.js/animations/scale.css';
+
+* {
+  -moz-transform-origin: unset !important;
+  -webkit-transform-origin: unset !important;
+  -o-transform-origin: unset !important;
+  -ms-transform-origin: unset !important;
+  transform-origin: unset !important;
+}
 
 body {
   margin: 0;
@@ -11,10 +18,10 @@ body {
   background-repeat: no-repeat;
 }
 
-.main_wrapper {
+.grid_wrapper {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 80%;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -24,37 +31,20 @@ body {
 .logotyp {
   color: rgba(80, 97, 130, 0.721);
   font-family: 'Megrim', cursive;
-  font-size: calc(10rem + 5vw);
+  font-size: 1rem;
   font-weight: 700;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.section {
-  display: none;
-}
 .heading-off {
   display: none;
 }
-
-.tip {
+.navigation-button {
+  text-decoration: none;
   color: rgba(80, 97, 130, 0.9);
   font-family: 'Megrim', cursive;
   font-weight: 300;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
-  gap: 0em 0em;
-  grid-template-areas:
-    'about . lorem'
-    '. logotyp .'
-    'loem . contact';
-}
-.logotyp {
-  grid-area: logotyp;
 }
 
 .tip-up {
@@ -68,27 +58,53 @@ body {
   justify-content: flex-end;
 }
 .border {
-  border: 7px solid;
-  border-image: url(../img/border.svg);
-  /* padding: 10px 15px; */
-  border-image-slice: 55 50;
+  border: 7px solid !important;
+  border-image: url(../img/border.svg) !important;
+  border-image-slice: 55 50 !important;
 }
 .border-inside {
   background-color: rgba(117, 124, 150, 0.2);
-  height: 90%;
+  /* height: 90%; */
   padding: 2px 5px;
   border-radius: 8%;
 }
 
-.about {
-  grid-area: about;
+/* section */
+.section {
+  position: relative;
+  /* display: none; */
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 85%;
+  z-index: 10;
 }
-.loem {
-  grid-area: loem;
+
+/* main grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  gap: 0em 0em;
+  grid-template-areas:
+    'about-grid . lorem-grid'
+    '. logotyp-grid .'
+    'lorem2-grid . contact-grid';
 }
-.contact {
-  grid-area: contact;
+.logotyp-grid {
+  grid-area: logotyp-grid;
 }
-.lorem {
-  grid-area: lorem;
+
+.about-grid {
+  grid-area: about-grid;
+}
+.lorem2-grid {
+  grid-area: lorem2-grid;
+}
+.contact-grid {
+  grid-area: contact-grid;
+}
+.lorem-grid {
+  grid-area: lorem-grid;
 }
