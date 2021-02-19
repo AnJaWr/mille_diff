@@ -36,6 +36,12 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+#logo_M {
+  transition: 0.5s;
+}
+svg:hover {
+  filter: drop-shadow(0 0 0.3rem rgb(61, 61, 61));
+}
 
 .heading-off {
   display: none;
@@ -46,6 +52,10 @@ body {
   font-family: 'Megrim', cursive;
   font-weight: 400;
 }
+.tip {
+  cursor: pointer;
+}
+
 .navigation-button:hover {
   color: rgb(80, 97, 130);
 }
@@ -66,22 +76,56 @@ body {
 }
 .border-inside {
   background-color: rgba(117, 124, 150, 0.2);
-  /* height: 90%; */
   padding: 2px 5px;
   border-radius: 8%;
 }
 
 /* section */
+
 .section {
   position: relative;
   /* display: none; */
-  left: 0;
-  right: 0;
-  width: 80%;
-  height: 85%;
   z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(117, 124, 150, 0.9);
+  padding: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  content: ' ';
 }
 
+.popup {
+  box-sizing: border-box;
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  top: -200%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: opacity 300ms ease-in-out, top 1000ms ease-in-out,
+    transform 1000ms ease-in-out;
+}
+
+.icon {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.icon i {
+  color: rgb(70, 74, 88);
+}
+
+.contact {
+  color: rgb(70, 74, 88);
+}
+
+.contact a {
+  color: rgba(243, 243, 243, 0.843);
+  text-decoration: none;
+}
 /* main grid container */
 
 .grid-container {
