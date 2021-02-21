@@ -5,7 +5,7 @@ $(document).ready(function () {
     end_contact = document.getElementById('contact_dot');
 
   new LeaderLine(start_about, end_about, {
-    color: '#656565',
+    color: 'rgb(196, 196, 196)',
     size: 1,
     path: 'grid',
     startPlug: 'disc',
@@ -16,7 +16,7 @@ $(document).ready(function () {
   });
 
   new LeaderLine(start_contact, end_contact, {
-    color: '#656565',
+    color: 'rgb(196, 196, 196)',
     size: 1,
     path: 'grid',
     startPlug: 'disc',
@@ -45,4 +45,7 @@ $(document).ready(function () {
   $('.close').click(function () {
     $('.section').fadeOut(1000);
   });
+
+  var vid = document.getElementById('video_bg');
+  vid.playbackRate = 0.5;
 });

@@ -12,11 +12,11 @@
 .main-wrapper {
   /* overflow: hidden; */
   position: absolute;
-  background-image: url(../img/background3.jpg);
+  /* background-image: url(../img/background3.jpg); */
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(238, 238, 238);
   width: 100%;
   height: 100%;
   margin: 0;
@@ -32,6 +32,16 @@
   justify-content: center;
   align-items: center;
 }
+
+/* video */
+.video_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0.4;
+}
+/* end video */
 .logotyp {
   color: rgba(80, 97, 130, 0.721);
   font-family: 'Megrim', cursive;
@@ -93,11 +103,12 @@ svg:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(117, 124, 150, 0.9);
-  padding: 8%;
-  width: 80%;
-  height: 80%;
+  padding: 5%;
+  width: 65%;
+  height: 65%;
   border-radius: 10px;
   content: ' ';
+  font-size: 0.8rem;
 }
 
 .about::-webkit-scrollbar-track {
@@ -180,13 +191,13 @@ svg:hover {
   grid-area: lorem-grid;
 }
 
-.circle-animated {
+/* .circle-animated {
   stroke: rgb(157, 166, 196);
   stroke-dasharray: 0;
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
   animation: spin 4s linear infinite;
-}
+} */
 
 /*  */
 @keyframes spin {
@@ -198,7 +209,7 @@ svg:hover {
     stroke-dasharray: 50;
   }
   66% {
-    stroke-dasharray:10;
+    stroke-dasharray: 10;
   }
 }
 
